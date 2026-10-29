@@ -1,0 +1,270 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #1f4a83;
+    color: #fff;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+nav {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    list-style: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #4CAF50;
+}
+
+.welcome h1 {
+    text-align: center;
+    font-size: clamp(30px, 8vw, 50px);
+    font-weight: bold;
+    margin-top: 60px;
+    padding: 0 10px;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.cnt {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1000px;
+    width: 90%;
+}
+
+.cnt img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 5px solid #28a745;
+    object-fit: cover;
+}
+
+.cnt1 {
+    text-align: left;
+}
+
+.cnt1 h1 { font-size: 28px; }
+.cnt1 h2 { font-size: 24px; }
+.cnt1 span { color: #28a745; }
+
+.cnt1 a.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 25px;
+    background: #28a745;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 12px;
+    font-weight: bold;
+    transition: transform 0.3s;
+}
+
+.cnt1 a.btn:hover {
+    background: #218838;
+    transform: translateY(-3px);
+}
+
+#about {
+    margin-top: 90px;
+    padding: 60px 20px;
+    background: #f4f4f4;
+    color: #333;
+    text-align: center;
+}
+
+#about p {
+    max-width: 800px;
+    margin: 10px auto;
+    font-size: 18px;
+}
+
+#about span { color: #28a745; font-weight: bold; }
+
+#skills {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.skill-card {
+    background: #f4f4f4;
+    color: #333;
+    padding: 15px 25px;
+    border-radius: 8px;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.projects_h { text-align: center; margin-top: 90px; }
+
+#projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px 20px;
+}
+
+.project1, .project2, .project3 {
+    background-color: #ddd;
+    color: #333;
+    padding: 20px;
+    width: 100%;
+    max-width: 320px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#projects img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+#calculator {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#gpaForm {
+    background: blanchedalmond;
+    padding: 30px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 350px;
+    margin: 20px auto;
+    color: #333;
+}
+
+#gpaForm input {
+    width: 80px;
+    height: 40px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#gpaForm button {
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+table {
+    margin: 40px auto;
+    width: 90%;
+    max-width: 400px;
+    background: white;
+    color: #333;
+    border-collapse: collapse;
+}
+
+th, td { border: 1px solid #ddd; padding: 12px; }
+th { background: #4CAF50; color: white; }
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 20px;
+    background: #16365f;
+}
+
+.contact_us {
+    background: #f4f4f4;
+    color: #333;
+    width: 100%;
+    max-width: 500px;
+    padding: 30px;
+    border-radius: 12px;
+    margin-top: 20px;
+}
+
+.contact_us input, .contact_us textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.contact_us button {
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px 45px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #111;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .cnt {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .cnt1 {
+        text-align: center;
+    }
+
+    .cnt1 a.btn {
+        margin: 15px auto;
+    }
+}

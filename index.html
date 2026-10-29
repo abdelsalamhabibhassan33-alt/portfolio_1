@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My Portfolio | Abdelsalam Habib Hassan</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    
+    <header id="hero">
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#calculator">Calculator</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="welcome"><h1>WELCOME TO MY PORTFOLIO</h1></div>
+        
+        <div class="hero-content">
+            <div class="cnt">
+                <img src="profile.jpeg" alt="MY Picture" class="profile-pic">
+                <div class="cnt1">
+                    <h1>Hello, my name is <span>Abdelsalam Habib</span></h1>
+                    <h2><span>Front-end</span> Developer</h2>
+                    <p>I'm a web designer with over 2 years of experience.<br>My expertise is in website design, graphic design, and more...</p>
+                    <p>Turning ideas into interactive digital realities.</p>
+                    <a href="#projects" class="btn">View My Work</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>My name is <span>Abdelsalam Habib Hassan</span>, a Year II student in Computer Science at INES Ruhengeri.</p>
+        <p>I am passionate about web design, user interfaces, and creative problem-solving.</p>
+        <h3>Career Goal:</h3>
+        <p>To become a leading Rwandan frontend engineer creating impactful digital products.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Technical Skills</h2>
+        <div class="skills-container">
+            <div class="skill-card">HTML5</div>
+            <div class="skill-card">CSS3</div>
+            <div class="skill-card">JavaScript</div>
+            <div class="skill-card">GitHub</div>
+            <div class="skill-card">Bootstrap</div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="projects_h" style="width: 100%;"><h2>My Projects</h2></div>
+        
+        <div class="project1">
+            <img src="project1.png" alt="Project 1">
+            <h3>Project Title 1</h3>
+            <p>Problem solved: Navigation ease</p>
+            <p>Technologies: <span>HTML, CSS, JS</span></p>
+            <a href="https://github.com/abdelsalamhabib/project1" target="_blank">View on GitHub</a>
+        </div>
+
+        <div class="project2">
+            <img src="project2.png" alt="Project 2">
+            <h3>Project Title 2</h3>
+            <p>Problem solved: Navigation ease</p>
+            <p>Technologies: <span>HTML, CSS</span></p>
+            <a href="https://github.com/abdelsalamhabib/project2" target="_blank">View on GitHub</a>
+        </div>
+
+        <div class="project3">
+            <img src="project3.png" alt="Project 3">
+            <h3>Project Title 3</h3>
+            <p>Problem solved: Navigation ease</p>
+            <p>Technologies: <span>HTML, CSS, JS</span></p>
+            <a href="https://github.com/abdelsalamhabib/project3" target="_blank">View on GitHub</a>
+        </div>
+    </section>
+
+    <section id="calculator">
+        <h2>Student GPA Calculator</h2>
+        <p>Enter your course marks (0-100) to calculate your GPA:</p>
+        <form id="gpaForm">
+            <input type="number" id="course1" placeholder="Mark 1" min="0" max="100" required>
+            <input type="number" id="course2" placeholder="Mark 2" min="0" max="100" required>
+            <input type="number" id="course3" placeholder="Mark 3" min="0" max="100" required>
+            <button type="button" id="calcBtn">Calculate GPA</button>  
+            <p id="result" style="margin-top:15px; font-weight:bold; min-height: 1.5em;"></p>
+        </form>
+
+        <table>
+            <caption>Common Grade Point Scale</caption>
+            <thead>
+                <tr><th>Grade</th><th>Points</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>A</td><td>4.0</td></tr>
+                <tr><td>B</td><td>3.0</td></tr>
+                <tr><td>C</td><td>2.0</td></tr>
+                <tr><td>D</td><td>1.0</td></tr>
+                <tr><td>F</td><td>0.0</td></tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="contact">
+        <div class="cv">
+            <h2>Download My CV</h2>
+            <a href="CURRICULUM VITAE.pdf" download class="btn">Download CV</a>
+        </div>
+
+        <div class="contact_us">
+            <h2>Contact Me</h2>
+            <p><i class="fa-regular fa-envelope"></i> <a href="mailto:abdelsalamhabibhassan33@gmail.com">Email Me</a></p>
+            <form id="contactForm">
+                <input type="text" placeholder="Your name" required>
+                <input type="email" placeholder="Your email" required>
+                <textarea placeholder="Your message" rows="5"></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Abdelsalam Habib Hassan. All rights reserved.</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
